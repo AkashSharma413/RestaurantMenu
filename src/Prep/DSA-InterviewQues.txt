@@ -1,0 +1,13 @@
+
+Q1: What is DSA?
+
+ANS: DSA stands for data structure and algorithm. 
+
+     Data Structure - Array
+                    - String
+                    - Stack
+                    - Linked List
+ 
+     Algorithm - Searching [Linear and Binary search] 
+               - Sorting [Merge, Quick, Heap, Selection, Insertion, Bubble]
+               - Hashing [Understanding of space and time complexity]

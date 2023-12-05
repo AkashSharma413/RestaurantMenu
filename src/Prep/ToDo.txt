@@ -1,0 +1,36 @@
+
+1. What is the controlled and uncontrolled component in React js?
+2. 
+3. 
+4. What is deep copy and shalow copy?
+5. What is the debouncing in javascript?
+6. What is Storybook in react js?
+7. What is Jest library in react js?
+8. What is type cursion in javascript?
+9. 
+10. 
+11. Difference between Fetch() and Axios() method in JavaScript?
+12. What is Web API?
+13. Typescript 
+14. 
+15. Memoization in javascript?
+16. What is throatling in javascript?
+17. Turing and Uplers test.
+18. What are the Web Vitals?
+19. What is event bubbling?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

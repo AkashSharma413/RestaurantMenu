@@ -1,0 +1,160 @@
+
+Q1 : What are some of the essential features of WordPress?
+
+ANS : The following are some of the essential features of WordPress:
+
+	- Easily manage the content of your website whenever you want. 
+	- Installing and upgrading WordPress has never been a problem. A number of web hosts offer one-click installations of WordPress that let you set it up in just 
+	  a few seconds.
+	- Create as many pages, posts, products, and more as you want - You can upload files, text, images, links, and embed media to your pages whenever you want.
+	- The WordPress platform lets you build any type of website, whether it's a personal blog or website, a portfolio, a photoblog, a business website, an online 
+	  magazine, a news publication, a government website, or even an online community.
+	- With WordPress, you get three default themes, but if they aren't perfect for you, you can find thousands of other themes in the theme directory.
+	- WordPress has a plugin directory with thousands of plugins for every feature that isn't in the core.
+	- It's easy to add, edit, or remove additional editors to allow others in your organization to manage content on your website.
+
+
+Q2 : What limitations does the WordPress website have?
+
+ANS : The use of WordPress is not limited. Depending on your needs, it can be used for anything, from e-commerce sites to membership sites. The downsides of WordPress 
+      include:
+
+	- Adding too many plugins can make the website hard to load and run.
+	- Making changes or modifications to a WordPress site requires PHP knowledge.
+	- It is sometimes necessary to update WordPress to keep it compatible with the latest browsers and mobile devices. Changing the version of WordPress leads to 
+	  data loss, so making a backup copy is essential.
+	- It is very difficult to modify or format the graphic images and tables.
+
+
+Q3 : In WordPress, how can we change the table prefix ( wp_ )?
+
+ANS : You can change and rename the WordPress database prefix in two ways.
+	- Change the table prefix in wp-config.php.
+	- Change the table prefix in the phpMyadmin database.
+
+
+Q4 : What are the basic steps we should take when our WordPress website is hacked?
+
+ANS : 	- Keep calm and seek an optimal solution.
+	- Track down the hack.
+	- Contact your web hosting provider.
+	- Get an InfoSec expert to help you.
+	- Download and install a security plugin, such as WordPress security.
+	- Locate, scan, and fix/remove malware.
+	- Ensure that your access permissions are correct.
+	- Also, update WordPress to its latest version. 
+	- Update all user IDs and passwords.
+	- Check to make sure that your plugins and themes are up to date.
+
+
+Q5 : How to increase WordPress website security?
+	
+ANS :   - Login procedures should be secure.
+	- Consider using a secure WordPress hosting provider.
+	- Update the WordPress version.
+	- Upgrade the PHP version.
+	- Download and install security plugins.
+	- Select a secure theme for WordPress.
+	- Enable SSL (Secure Socket Layer) or HTTPS (HyperText Transfer Protocol Secure) for your site.
+	- Set up a firewall.
+	- Make a backup of your site.
+	- Manage user permissions on WordPress.
+	- Change the default login URL of WordPress.
+	- Disable editing files within the WordPress dashboard.
+	- Modify the database file prefix.
+	- Delete the default WordPress administrator account.
+	- Hide the WordPress version.
+
+
+Q6 : Where is the WordPress content stored?
+
+ANS : Wp_posts is a table in your MySQL database that holds the content of your WordPress posts and pages. WordPress displays your content using dynamic PHP templates,
+      so it doesn't store a separate HTML file for each page. In the database, you can also find "Pages" (or other custom post types available in WordPress) in the 
+      wp_posts table. Typically, these can be accessed through phpMyAdmin.
+
+
+Q7 : Can you tell me how to create a page template?
+
+ANS : Creating custom templates can serve a number of purposes, such as making a different layout from the home page or displaying custom post types like news.
+
+	- Add a news.php file to the theme folder.
+	- Add the get_header() and get_footer() functions to the news.php page.
+	- Add them at the top. The template name is now "News Template".
+
+
+Q8 : List a few template tags that can be used in WordPress.
+
+ANS :   - get_header()
+	- get_footer()
+	- get_sidebar()
+	- wp_login_url()
+	- get_calendar()
+	- allowed_tags()
+	- the_author()
+	- get_the_author()
+	- wp_list_bookmarks()
+	- get_bookmark()
+	- the_category()
+	- the_category_rss()
+	- comment_author()
+	- comment_author_email()
+	- the_permalink()
+	- user_trailingslashit()
+	- permalink_anchor()
+	- post_class()
+	- post_password_required()
+	- get_post_thumbnail_id()
+	- the_post_thumbnail()
+	- wp_nav_menu()
+	- walk_nav_menu_tree(), etc
+
+
+Q9 : What do you mean by WordPress Hooks?
+
+ANS : Whenever you wish to alter or customize something in WordPress, you can almost certainly make use of a hook. WordPress hooks enable you to manipulate the 
+      behavior of a procedure without having to modify the WordPress core files. With hooks, you can modify or add new features to WordPress without modifying the core 
+      files.
+
+
+Q10 : Explain shortcode in WordPress.
+
+ANS : A shortcode is a small chunk of code, placed between brackets like [yourshortcode], that performs a specific function for your site. It can be placed anywhere to 
+      provide a specific feature to a page, post, or other content. WordPress shortcodes make it easy to add dynamic content to pages, posts, and sidebars. Several 
+      WordPress plugins and themes offer shortcodes for adding specialized content to websites, such as sliders, image galleries, contact forms, and more.
+
+
+Q11 : What is the best way to display a list of child pages in WordPress?
+
+ANS : Shortcodes are convenient, but they require you to add them to every page that has a parent or a child page. You may end up using shortcodes on a lot of pages, 
+      and you may even forget to do it. It would be beneficial to alter the page template file in your theme so that child pages will be displayed automatically. This 
+      can be achieved by editing the main page.php template, or by creating a custom page template in your theme.
+
+
+Q12 : Can you explain the user metafunction in WordPress?
+
+ANS : A user meta in WordPress is a set of distinct, different, and customized text fields for each user according to his or her preferences. In other words, WordPress 
+      user meta allows you to add whatever information you wish about your users. Update_user_meta() is the function you use to add or update a user's metadata. It 
+      looks as follows:
+      update_user_meta( $user_id, $meta_key, $meta_value, $prev_value );
+
+
+Q13 : What are widgets in WordPress?
+
+ANS : A WordPress widget can be used to add specific content or features to a website. Website widgets can be added to various parts of a site, such as the sidebars or 
+      footer, or any other areas. Widgets allow you to add features and functions to your site with no programming required. There are many widgets you can add to your
+       site, including menus, banner ads, calendars, popular posts, and social icons.
+
+
+Q14 : What is a Child theme in WordPress?
+
+ANS : A child theme inherits the functionality, features, and styling of the parent theme (WordPress theme). Child themes let you change small details of your site's 
+      appearance while still preserving the parent theme's appearance and functionality. The child theme is designed to inherit the features and appearance of the 
+      parent theme, while also enabling the user to make modifications/alterations to any part of the theme.
+
+
+Q15 : Explain WordPress Taxonomies.
+
+ANS : WordPress Taxonomies group content or data together in WordPress. Shortly, it allows you to organize/group your posts based on what they have in common 
+      (characteristics). Several default taxonomies are available, and you can also design your own. WordPress's Categories and Tags are two of its most popular 
+      taxonomies.
+      

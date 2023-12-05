@@ -1,0 +1,22 @@
+
+Q1 : What is the difference between SVN and GIT.
+
+ANS : GIT - GIT is a distributed version control system.
+          - Repositories stored on a central server.
+          - All changes committed on contributor's local machine.
+          - It create .git file in the main folder of the project.
+          - It has repository backup.
+          - Merge conflicts are relatively easily. 
+
+      SVN - SVN is stand for subversion. It is a centralized version control system.
+          - Repositories stored on a central server.
+          - All changes committed to main branch on central server.
+          - It create .svn file in all the folders of the project.
+          - No backup of repository.
+          - Merge conflicts are messy.
+
+
+Q2: What is GIT Merge and GIT Commit?
+
+ANS : GIT Merge - With this command we can merge one branch changes to another branch.
+      GIT Commit - With this command we can commit our code locally or on server as well.

@@ -1,0 +1,137 @@
+
+Q1 : What is the Box model in CSS? Which CSS properties are a part of it?
+
+ANS : A rectangle box is wrapped around every HTML element. The box model is used to determine the height and width of the rectangular box. The CSS Box consists of
+       Width and height (or in the absence of that, default values and the content inside), padding, borders, margin.
+
+	- Content: Actual Content of the box where the text or image is placed.
+	- Padding: Area surrounding the content (Space between the border and content).
+	- Border: Area surrounding the padding.
+	- Margin: Area surrounding the border.
+
+
+Q2 : What are the different types of Selectors in CSS?
+
+ANS : - Universal Selector             (*)
+      - Element Type Selector          (any html element)
+      - ID Selector                    (#container)
+      - Class Selector                 (.container)
+      - Descendant Combinator          (#container .box)  
+      - Child Combinator               (#container > .box) 
+      - General Sibling Combinator     (h2 ~ p)
+      - Adjacent Sibling Combinator    (p + p)
+      - Attribute Selector             (input [type=”text”])
+
+
+Q3 : What is the difference between inline, inline-block, and block?
+
+ANS : - Block Element: The block elements always start on a new line. They will also take space for an entire row or width. List of block elements are <div>, <p>.
+
+      - Inline Elements: Inline elements don't start on a new line, they appear on the same line as the content and tags beside them. Some examples of inline elements
+                          are <a>, <span> , <strong>, and <img> tags. 
+
+      - Inline Block Elements: Inline-block elements are similar to inline elements, except they can have padding and margins and set height and width values.
+
+
+Q4 : What are Pseudo elements and Pseudo classes?
+
+ANS : Pseudo-elements - ::before
+			::after
+			::first-letter
+			::first-line
+			::selection
+
+      Pseudo-classes -  :root
+			:link
+		        :visited
+			:hover
+			:active
+			:focus
+
+
+Q5 : Different Box Sizing Property?
+
+ANS : The box-sizing CSS property sets how the total width and height of an element are calculated.
+
+	- Content-box: The default width and height values apply to the element's content only. The padding and border are added to the outside of the box.
+	- Padding-box: Width and height values apply to the element's content and its padding. The border is added to the outside of the box. Currently, only Firefox
+ 		       supports the padding-box value.
+	- Border-box: Width and height values apply to the content, padding, and border.
+
+
+Q6 : What are the properties of flexbox?
+
+ANS : Flexbox stands for flexible box and it was introduced around 2017 in CSS with the purpose of providing an efficient way to handle layouts, align elements within
+        them and distribute spaces amongst the items in dynamic/responsive conditions. It provides an enhanced ability to alter the dimensions of the items and make 
+	use of the available space in the container efficiently. In order to achieve this, CSS3 provides some properties.
+      - flex-direction
+      - flex-wrap
+      - flex-flow
+      - justify-content
+      - align-items
+      - align-content
+
+
+Q7 : Explain CSS position property?
+
+ANS : - Absolute: To place an element exactly where you want to place it. absolute position is actually set relative to the element's parent. if no parent is available
+                   then the relative place to the page itself (it will default all the way back up to the element).
+
+      - Relative: "Relative to itself". Setting position: relative; on an element and no other positioning attributes, it will no effect on its positioning. It allows
+                    the use of z-index on the element and it limits the scope of absolutely positioned child elements. Any child element will be absolutely positioned
+                      within that block. 
+
+      - Fixed: The element is positioned relative to the viewport or the browser window itself. viewport doesn't change if you scroll and hence the fixed element will
+                 stay right in the same position. 
+
+      - Static: Static default for every single page element. The only reason you would ever set an element to position: static is to forcefully remove some
+                positioning that got applied to an element outside of your control.
+ 
+      - Sticky: Sticky positioning is a hybrid of relative and fixed positioning. The element is treated as relative positioned until it crosses a specified threshold,
+                 at which point it is treated as fixed positioned.
+
+
+Q8 : How to center align a div inside another div?
+
+ANS : - Centering with Table
+      - Centering with Transform
+      - Centering with Flexbox
+      - Centering with Grid 
+
+
+Q9 : What does the :root pseudo-class refer to?
+
+ANS : The :root selector allows you to target the highest-level “parent” element in the DOM, or document tree. It is defined in the CSS Selectors Level 3 specification.
+
+
+Q10 : What is specificity? How to calculate specificity?
+
+ANS : A process of determining which CSS rule will be applied to an element. It actually determines which rules will take precedence. Inline style usually wins then ID
+       then the class value (or pseudo-class or attribute selector), the universal selector (*) has no specificity. ID selectors have a higher specificity than
+       attribute selectors.
+
+
+Q11 : What is progressive rendering? How do you implement progressive rendering in the website?. What are the advantages of it?
+
+ANS : Progressive rendering is the name given to techniques used to improve the performance of a webpage (in particular, improve perceived load time) to render content
+       for display as quickly as possible.
+
+      We can implement the progressive rendering of the page by loading the lazy loading of the images.  We can use Intersection Observer API to lazy load the image.
+       The API makes it simple to detect when an element enters the viewport and take an action when it does. Once the image enters the viewport, we will start loading
+       the images.
+
+
+Q12 : Does style1.css have to be downloaded and parsed before style2.css can be fetched?
+
+ANS : No, the browsers will download the CSS in the order of its appearance on the HTML page.
+
+
+Q13 : What is the importance of CSS Sprites?
+
+ANS : Using the sprites images, It reduces the number of http request.
+
+
+Q14 : What are the advantages of using translate() instead of absolute position?
+
+ANS : Translate() does not cause the browser to trigger repaint and layout and instead only acts on the compositor. The absolute position triggers the repaint or DOM
+         reflow. So, translate() gives better performance.

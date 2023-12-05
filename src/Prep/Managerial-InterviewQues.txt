@@ -1,0 +1,68 @@
+
+Q1 : Why should we hire you?
+
+ANS : - I should be hired for this role because I have all that relevent skills set and capabilities to fit this position.
+      - I've researched the company and can add value to its growth. My positive attitude, work ethics making me a committed and valuable asset to the company. 
+
+
+Q2 : Why do you want to join this company?
+
+ANS : TCS being one of the leading consultancy firm in the market and with quality working environment. Being in TCS will be an amazing opportunity to learn, grow 
+      and explore and give the best of me, Also above all. TCS would be like an ocean of endless learning experience of the most latest technologies and practices.
+
+
+Q3 : What do you know about this company?
+
+ANS : - TCS stands for Tata Consultancy Services and it is founded in 1869 by Jamsetji Nusserwanji Tata. It is a multi-national company providing IT services. 
+        It provides software and consultancy services in different industries like Finance, Education, Insurance, Retail, Energy, Life Science, and Healthcare.
+
+
+Q4 : What are your strength and weekness?
+
+ANS : - I am disciplined, positive-thinker, honest, hard worker and always open to learn new things in life.
+      - I am over-thinker and a bit emotional person.
+
+
+Q5 : What motivates you at work?
+
+ANS : Being a helpful and dependable team member motivates me.
+
+
+Q6 : What is your biggest achivement till date?
+
+ANS : - I got price/shield for employee of the month from my manager around 4 years ago. 
+
+
+Q7 : How do you handle work pressure?
+
+ANS : - I always use STAR formula under pressure which is Situation, Tasks, Action, Result.
+      - I always keep calm myself under pressure and seek for an optimal solution.
+      - Visualize the worst case scenario.
+      - Open to take help from other team member or seniors.
+
+
+Q8 : Have you ever worked in a leadership position?
+
+ANS : Yes, I got a chance to lead/manage a project around 1 and half year ago. The project was of WHO organisation which was Document Management System.
+      In that project, I have handled 2 people of team. One was junior developer of 3-4 years of experience and second was mid-level developer of 5-6 years of experience.
+      I used to connect with the client which was US based and used to take requirement/task, than transfer or discusse those tasks/requirement with the developers acordingly.
+      I have handled that project around 7-8 months. 
+
+
+Q9 : What is your day to day roles and activities?
+
+ANS : - On daily basis, I use to connect with client over MS Team chat for updating my task status. And use to connect with client once in a week with team meeting.
+      - I majorly work on frontend related tasks everyday.
+      - I use to work on HTML5, CSS3, Bootstrap, Flexbox and Javascript technologies everyday.
+      - On daily basis, I use Visual Studio 2022, VS Code editor, Trello for tasks management, Outlook, GIT and GitLab for project tasks push and pull request.    
+
+
+Q10 : Can you explain gap in your resume?
+
+ANS : I did not get placement from college. I had to search job from outside. It took around 10-11 months to get the job. This was the main reason. 
+
+
+Q11 : Do you have any question? 
+
+ANS : - What are the key areas, where i need to improve myself more?
+      - If i got selected, on what type of project i will get a chance to work?

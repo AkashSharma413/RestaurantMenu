@@ -1,0 +1,134 @@
+
+Q1 : What are the advantages of Bootstrap?
+
+ANS : The following are some advantages of Bootstrap:
+      - Bootstrap is simple to use and anyone with a basic understanding of HTML and CSS can get started.
+      - Features that adapt to phones, tablets, and desktops: Bootstrap's responsive CSS adapts to phones, tablets, and desktops.
+      - A mobile-first strategy: Mobile-first styles are built into the Bootstrap framework.
+      - Bootstrap 4 is compatible with all modern browsers, including Chrome, Firefox, Internet Explorer 10+, Edge, Safari, and Opera.
+
+
+Q2 : What are the default Bootstrap text settings?
+
+ANS : - The default font size in Bootstrap 4 is 16px, with a line-height of 1.5.
+      - The default font family is "Helvetica Neue," which includes Helvetica, Arial, and other sans-serif fonts.
+      - Margin-top: 0 and margin-bottom: 1rem are also set on all <p> elements (16px by default)
+
+
+Q3 : What do you know about the Bootstrap Grid System?
+
+ANS : The Bootstrap Grid System is a mobile-first, responsive grid system that scales up to 12 columns as the device or viewport size grows. Predefined classes for 
+      quick layout options and powerful mix-ins for creating successful semantic layouts are included in the system.
+
+      There are five classes in the Bootstrap 4 grid system:
+
+      .col-xs- for extra small devices, whose screen width is less than 576px.
+      .col-sm- small devices, whose screen width is equal to or greater than 576px.
+      .col-md- medium devices, whose screen width is equal to or greater than 768px.
+      .col-lg- large devices, whose screen width is equal to or greater than 992px.
+      .col-xl- extra large devices, whose screen width is equal to or greater than 1200px.
+      The classes listed above can be combined to build layouts that are more dynamic and adaptable.
+
+
+Q4 : What is the difference between Bootstrap 4 and Bootstrap 5?
+
+ANS :        PARAMETER	      BOOTSTRAP 4	                                  BOOTSTRAP 5
+
+           - Grid System      -5 tier grid system(xs, sm, md, lg, xl).	          -6 tier grid system(xs, sm, md, lg, xl, xxl).
+           - Jquery	      -It has jQuery along with all the related plugins.  -Jquery is removed and it has switched to vanilla JS with some working plugins.
+           - IE Support       -Bootstrap 4 supports both IE 10 and 11.	          -Bootstrap 5 doesn’t support IE 10 and 11.
+           - Bootstrap Icons  -Bootstrap 4 doesn’t have its own SVG icons. 	  -Bootstrap 5 has its own SVG icons.
+           - Card deck        -The card deck class, used to create a set of       -Card deck class has been removed in bootstrap 5.
+                               cards with equal width and height, is available 
+                               in bootstrap 4.
+
+
+Q5 : In Bootstrap, what are the two codes for displaying code?
+
+ANS : In Bootstrap, there are two straightforward ways to display code:
+
+      - The <code> element is used to showcase a piece of inline code.
+      - You can use the <pre> tag to display a code that has multiple lines or even a block element.
+
+
+Q6 : In Bootstrap 4, what is flexbox?
+
+ANS : Flexbox is a layout module for flexible boxes. Without using float or positioning, you can quickly create a flexible layout design with flexbox.
+
+
+Q7 : What is a bootstrap card and how would you create one?
+
+ANS : In Bootstrap 4, a card is a bordered box with padding surrounding its content. It has options for headers, footers, content, and colors, among other things.
+      <div class="card" style="width:400px">
+       <img class="card-img-top" src="img_avatar.png" alt="Card image">
+       <div class="card-body">
+        <h4 class="card-title">Richard Taylor</h4>
+        <p class="card-text">Some example text.</p>
+        <a href="#" class="btn btn-primary">See Profile</a>
+       </div>
+      </div>
+
+
+Q8 : Explain input groups in Bootstrap.
+
+ANS : - The .input-group class is a container for enhancing an input by adding a "help text" icon, text, or button in front or behind the input field.
+      - To add the help text in front of the input, use .input-group-prepend, and to add it behind the input, use .input-group-append.
+      - Finally, style the provided help text with the .input-group-text class.
+
+
+Q9 : What is the media object in Bootstrap and what are their types?
+
+ANS : Bootstrap's media objects allow you to position media objects such as images, videos, and audio to the left or right of content blocks. Media elements can be
+       constructed using the class .media and the source is specified by using the class .media-object. There are two types of media objects:
+       .media
+       .media-list
+
+
+Q10 : What do you understand by column ordering in Bootstrap?
+
+ANS : One of the most intriguing properties of bootstrap is column ordering. The columns can be readily written in a specific order by utilizing relevant functions.
+       You might alternatively put them in a different column. Use the push and pull column classes to easily rearrange or rearrange the order of the columns. These
+       classes are used in conjunction with the .col-xs-#, .col-sm-#, .col-md-#, and .col-lg-# Bootstrap grid classes.
+
+      .col-xs-push-# and .col-xs-pull-# are the push and pull classes for the Bootstrap grid. This also works well for sm, md, and lg. The pull class moves columns to
+       the left, whereas the push class moves them to the right.
+
+
+Q11 : Explain the affix plugin.
+
+ANS : The affix plugin allows you to affix a <div> to a particular location on the page. You may also use this plugin to turn on and off the pinning. Social icons are
+       a good example of this. They'll start in one position, but when the page reaches a certain point, the <div> will be frozen in place and will no longer scroll
+       with the rest of the page.
+
+
+Q12 : In Bootstrap, what is a scrollspy?
+
+ANS : It's an auto-updating nav component that allows you to grab sections of the page based on where you're scrolling. Based on the scroll position, the .active class 
+      will update from one nav item to the next.
+
+
+Q13 : How is tooltip different from popover?
+
+ANS : - When the user moves the mouse pointer over an element, the Tooltip component appears as a little pop-up box. The Popover component is a pop-up box that emerges
+         when the user clicks on an element. The popover may hold a lot more information.
+      - The popover will show on the right side of the element by default whereas the tooltip will show on the top of the element by default.
+
+
+Q14 : What are the properties of FLEXBOX?
+
+ANS : - Enable flex behaviors with class .d-flex
+      - Direction with class .flex-row, .flex-row-reverse, flex-column, flex-column-reverse
+      - Justify content with class .justify-content-start, .justify-content-end, .justify-content-center, .justify-content-between, .justify-content-around
+      - Align Item with class .align-item-stretch, .align-item-start, .align-item-end, .align-item-baseline, .align-item-center
+      - Auto margins: You can easily add auto margins to flex items with .mr-auto which pushes items to the right, or by using .ml-auto which pushes items to the left.
+      - Wrap with class .flex-wrap, .flex-nowrap, flex-wrap-reverse
+
+
+Q15 :  What are the important rules that you should follow while using Grids in Bootstrap?
+
+ANS : The following three rules should be strictly kept in mind while using Grids in Bootstrap
+      - A row's immediate child must be a Column.
+      - Rows are just used to contain Columns and are not utilized for anything else.
+      - Rows should be put within a container
+
+

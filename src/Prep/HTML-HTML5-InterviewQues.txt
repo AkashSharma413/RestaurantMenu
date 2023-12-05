@@ -1,0 +1,130 @@
+
+Q1 : Are the HTML tags and elements the same thing?
+
+ANS : No, HTML elements are defined by a starting tag, may contain some content and a closing tag.For example, <h1>Heading 1</h1> is a HTML element but just <h1> is a 
+      starting tag and </h1> is a closing tag.
+
+
+Q2 : What are void elements in HTML?
+
+ANS : HTML elements which do not have closing tags or do not need to be closed are Void elements. For Example <br />, <img />, <hr />, etc.
+
+
+Q3 : What is the difference between the ‘id’ attribute and the ‘class’ attribute of HTML elements?
+
+ANS : Multiple elements in HTML can have the same class value, whereas a value of id attribute of one element cannot be associated with another HTML element.
+
+
+Q4 : Describe HTML layout structure.
+
+ANS : Every web page has different components to display the intended content and a specific UI. But still, there are few things which are templated and are
+       globally accepted way to structure the web page, such as:
+      
+      <header>: Stores the starting information about the web page.
+      <footer>: Represents the last section of the page.
+      <nav>: The navigation menu of the HTML page.
+      <article>: It is a set of information.
+      <section>: It is used inside the article block to define the basic structure of a page.
+      <aside>: Sidebar content of the page.
+
+
+Q5 : How to optimize website assets loading?
+
+ANS : To optimize website load time we need to optimize its asset loading and for that:
+
+      CDN hosting - A CDN or content delivery network is geographically distributed servers to help reduce latency.
+      File compression - This is a method that helps to reduce the size of an asset to reduce the data transfer
+      File concatenation - This reduces the number of HTTP calls
+      Minify scripts - This reduces the overall file size of js and CSS files
+      Parallel downloads - Hosting assets in multiple subdomains can help to bypass the download limit of 6 assets per domain of all modern browsers. This can be
+                            configured but most general users never modify these settings.
+      Lazy Loading - Instead of loading all the assets at once, the non-critical assets can be loaded on a need basis.
+
+
+Q6 : Please explain how to indicate the character set being used by a document in HTML?
+
+ANS : The character set is defined in <meta> tag inside <head> element.
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="UTF-8" />
+   ...
+   ...
+ </head>
+ ...
+</html>
+
+
+Q7 : What is the difference between <strong>, <b> tags and <em>, <i> tags?
+
+ANS : The effect on a normal webpage of the tags <strong>, <b>  and <em>, <i> is the same. <b> and <i> tags stands for bold and italic. These two tags only apply font
+        styling and bold tag <b>, just adds more ink to the text, these tags don't say anything about the text.
+
+      Whereas, <strong> and <em> tags represent that the span of text is of strong importance or more importance and emphatic stress respectively than the rest of the
+       text. These tags have semantic meaning.
+
+
+Q8 : Can we display a web page inside a web page or Is nesting of webpages possible?
+
+ANS : Yes, we can display a web page inside another HTML web page. HTML provides a tag <iframe> using which we can achieve this functionality.
+      <iframe src=”url of the web page to embed” />
+
+
+Q9 : Is it possible to change an inline element into a block level element?
+
+ANS : Yes, it is possible using the “display” property with its value as “block”, to change the inline element into a block-level element.
+
+
+Q10 : In how many ways you can display HTML elements?
+
+ANS : - inline: Using this we can display any block-level element as an inline element. The height and width attribute values of the element will not affect.
+      - block: using this, we can display any inline element as a block-level element. 
+      - inline-block: This property is similar to inline, except by using the display as inline-block, we can actually format the element using height and width values.
+      - flex: It displays the container and element as a flexible structure. It follows flexbox property.
+      - inline-flex: It displays the flex container as an inline element while its content follows the flexbox properties.
+      - grid: It displays the HTML elements as a grid container.
+      - none: Using this property we can hide the HTML element.
+
+
+Q11 : When to use scripts in the head and when to use scripts in the body?
+
+ANS : If the scripts contain some event-triggered functions or jquery library then we should use them in the head section. If the script writes the content on the page
+       or is not inside a function then it should be placed inside the body section at the bottom. In short, follow below three points:
+
+      - Place library scripts or event scripts in the head section.
+      - Place normal scripts that do not write anything on the page, in the head section until there is any performance issue.
+      - Place scripts that render something on the web page at the bottom of the body section.
+
+
+Q12 : What are some of the advantages of HTML5 over its previous versions?
+
+ANS : Some advantages of HTML5 are:-
+      - It has Multimedia Support.
+      - It has the capabilities to store offline data using SQL databases and application cache.
+      - Javascript can be run in the background.
+      - HTML5 also allows users to draw various shapes like rectangles, circles, triangles, etc.
+      - Included new Semantic tags and form control tags.
+
+
+Q13 : How to specify the metadata in HTML5?
+
+ANS : To specify we can use <meta> tag which is a void tag,i.e., it does not have a closing tag. Some of the attributes used with meta tags are name, content, http-
+          equiv, etc. 
+
+
+Q14 : Is the <datalist> tag and <select> tag same?
+
+ANS : No. The <datalist> tag and <select> tag are different. In the case of <select> tag a user will have to choose from a list of options, whereas <datalist> when
+       used along with the <input> tag provides a suggestion that the user selects one of the options given or can enter some entirely different value.
+
+
+Q15 : Explain the concept of web storage in HTML5.
+
+ANS : This web storage helps in storing some of the static data in the local storage of the browser so that we do not need to fetch it from the server every time we
+       need it. There is a size limit based on different browsers. This helps in decreasing the load time and a smooth user experience. There are two types of web
+       storage that are used to store data locally in HTML5:
+
+      Local Storage - This helps in storing data that will be retained even though the user reopens the browser. It is stored for each webapp on different browsers.
+      Session Storage - This is used for one session only. After the user closes the browser this gets deleted.
+

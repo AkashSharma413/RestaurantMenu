@@ -1,0 +1,301 @@
+Q1: What is javascript?
+
+ANS: JavaScript is a single threaded, non-blocking and asynchronous concurrent programing language. 
+
+
+Q2: What are the different data types present in javascript?
+
+ANS: There are two types of data types in javascript. We can use "typeof" operator to check the type of variable. 
+
+      1. Primitive types
+         - String 
+         - Symbol
+         - Number
+         - Null
+         - Boolean
+         - BigInt
+         - Undefined
+
+      2. Non-primitive types
+         - Object
+ 
+
+Q3: Explain Hoisting in javascript.
+
+ANS: Hoisting is the default behaviour of javascript where all the variable and function declarations are moved on top. This means that irrespective of where the            
+      variables and functions are declared, they are moved on top of the scope. The scope can be both local and global. Variable initializations are not hoisted, 
+      only variable and functions declarations are hoisted. To avoid hoisting, you can run javascript in strict mode by using “use strict” on top of the code.
+
+
+Q4: Explain passed by value and passed by reference.
+
+ANS: In JavaScript, primitive data types are passed by value and non-primitive data types are passed by reference.
+
+
+Q5: Explain “this” keyword.
+
+ANS: The “this” keyword refers to the object that the function is a property of.
+      The value of the “this” keyword will always depend on the object that is invoking the function.
+
+
+Q6: Explain Scope and Scope Chain in javascript.
+
+ANS: There are three types of scopes in JS :
+
+      - Global Scope : Variables or functions declared in the global namespace have global scope, which means all the variables and functions having global scope can 
+	be accessed from anywhere inside the code.
+
+      - Function Scope/Local scope : Any variables or functions declared inside a function have local/function scope, which means that all the variables and functions 
+	declared inside a function, can be accessed from within the function and not outside of it.
+
+      - Block Scope : Block scope is related to the variables declared using let and const. Variables declared with var do not have block scope. Block scope tells us 		
+	that any variable declared inside a block { }, can be accessed only inside that block and cannot be accessed outside of it.
+
+      - Scope Chain : JavaScript engine also uses Scope to find variables. if the javascript engine does not find the variable in local scope, it tries to check for 	
+	the variable in the outer scope. If the variable does not exist in the outer scope, it tries to find the variable in the global scope.
+
+
+Q7: What are callbacks?
+
+ANS: Functions that are used as an argument to another function are called callback functions.
+
+
+Q8: What is recursion in a programming language?
+
+ANS: Recursion is a technique to iterate over an operation by having a function call itself repeatedly until it arrives at a result.
+
+
+Q9: What is DOM?
+
+ANS: - DOM stands for Document Object Model.  DOM is a programming interface for HTML and XML documents.
+      - When the browser tries to render an HTML document, it creates an object based on the HTML document called DOM. Using this DOM, we can manipulate or change         
+	various elements inside the HTML document.
+
+
+Q10: What is virtual DOM?
+
+ANS: Virtual DOM is a copy of the actual DOM. In virtual DOM, we can not make changes directly to the actual DOM. React Js work on virtual DOM concept.
+
+
+Q11: What are the call(), apply() and bind() methods in javascript?
+
+ANS: call() - This method is use like to borrow the function. We can pass as many arguments in it as we want seperatly.
+
+               Syntax - printDetails.call(userDetails, "Delhi", "India")  [printDetails - is generic function, userDetails - is an object]
+
+
+      apply() - This method is use like to borrow the function. We can pass as many arguments in it as we want in an array form.
+
+               Syntax - printDetails.apply(userDetails, ["Delhi", "India"])  [printDetails - is generic function, userDetails - is an object]
+
+
+      bind() - This method is similer to call() method. It creates a copy of a function than invoke that new copied function. It does not invoke the original function                 
+	       directly.
+
+               Syntax - let newFun = printDetails.bind(userDetails, "Delhi", "India")  [printDetails - is generic function, userDetails - is an object]
+                        newFun(); 
+
+
+Q12: What are the forEach(), map(), filter() and reduce() method or Higher Order Functions(HOF) in javascript?
+
+ANS: forEach() - It takes three parameters value, index and array. It perform operation on the same array's elements. It make changes in the original array.
+                  
+                  let arr = [20, 45, 88];
+
+                      arr.forEach( (value, index, array) => {
+ 			   return value;
+                           })
+
+      map() - It takes three parameters value, index and array. It creates new array than it perform operation on new array's elements. It does not make changes in the               
+	      original array. It returns an array.
+                
+		  let arr = [20, 45, 88];
+
+                  let a = arr.map( (value, index, array) => {
+ 			   return value;
+                           })
+
+     filter() - It also take three parameters value, index and array. It return only those values which retuns true. It does not make changes in the original array. It 	        
+	        returns an array.
+
+                let arr = [20, 45, 88];
+
+                let a = arr.filter( (value, index, array) => {
+ 			   return value;
+                           })
+
+     reduce() - It reduces the array to a single value
+
+                let arr = [1, 2, 3, 4, 5];
+                
+                let a = arr.reduce( (p1, p2) => {
+                    return p1 + p2;               
+                });
+                
+                console.log(a);
+
+                Output = 15
+
+
+Q13: What are the Anonymous function in javascript?
+
+ANS: Functions which don't have any name are called anonymous function.
+
+
+Q14: What are the Closures in javascript?
+
+ANS: A closure is a function that references variables in the outer scope from its inner scope. The closure preserves the outer scope inside its inner scope. It works       
+      on the lexical scope concept. 
+
+      Example : function greeting(message) {
+                      
+                         return function(name){
+                                return message + ' ' + name;
+                         }
+                }
+
+                let sayHi = greeting('Hi');
+                let sayHello = greeting('Hello');
+
+                console.log(sayHi('John'));  // Output 'Hi John'
+                console.log(sayHello('John'));  // Output 'Hello John'
+
+
+Q15: What is Currying in javascript? 
+
+ANS: It is a advance technique in javascript to call the closures function or to use the closures. 
+
+      Example : function Addition(a){
+                        return function(b){
+                              return function(c){
+                                    return a+b+c;              
+                              }
+                        }
+                }
+
+                let res = Addition(2)(4)(6);
+                console.log(res);
+
+                Output : 12
+
+
+Q16: What are the Generators in javascript?
+
+ANS: In ECMAScript 2015, generators were introduced to the JavaScript language. A generator is a process that can be paused and resumed and can yield multiple values.       
+      A generator in JavaScript consists of a generator function, which returns an iterable Generator object.
+
+      Example : function *message(){
+                        console.log("First Message!");
+                        yield "yield no 1"; 
+			console.log("Second Message!");
+                        yield "yield no 2";
+		}
+
+                let g = message();
+                console.log(g.next());
+                console.log(g.next());
+
+                yield => pause
+
+
+Q17: What are the object prototypes in javascript?
+
+ANS: All Javascript objects inherit property and methods from a prototype. We can also add new property and method to the existing object's prototype. The 
+      Object.prototype is on the top of the prototype inheritance chain.
+
+      Example : function Person(first, last, age, eye) {
+  			this.firstName = first;
+  			this.lastName = last;
+  			this.age = age;
+  			this.eyeColor = eye;
+		}
+
+		Person.prototype.nationality = "English";
+		Person.prototype.name = function() {
+  			return this.firstName + " " + this.lastName;
+		};
+
+		const myFather = new Person("John", "Doe", 50, "blue");
+		document.getElementById("demo").innerHTML = "The nationality of my father is " + myFather.nationality + " and his name is " + myFather.name;
+
+		Output = "The nationality of my father is English and his name is John Doe"
+
+
+Q18: What is Event Loop in JavaScript?
+
+ANS: Event loop pushes the event one by one from event queue to the call stack. 
+
+
+Q19: What are the SOLID principles in Javascript / in software engineering?
+
+ANS: There are five SOLID principles in Javascript. These are applies in every programming language not only in Javascript. It helps to make our code more Robust, 
+     Flexible, Scalable, Maintainable and easy to test. 
+
+     S - Single Responsibility    [e.g. Validating user and adding value into database in one function] 
+     O - Open/Close               [e.g. Adding a new 'superuser' role in array and checking it from the same function]
+     L - Liskov Substitution      [e.g. Bird() class, Dog() class and Penguin() class having own methods with inheritence example]
+     I - Interface Segregation    [e.g. Vegiterian and Non-Vegiterian person in restaurant example]
+     D - Dependency Inversion     [e.g. API call with tightly coupled dataset, need to put in seperate method || Tv remote battery example as battery is loosely 
+                                        couppled with Tv remote. Battery can be of any brand.] 
+
+
+Q20: What are the design patterns in Javascript / in software engineering?
+
+ANS: Design patterns are the well proved solutions of commonly occuring problems in software design life cycle. Design patterns represent an idea. It applies in every
+     programming language.
+
+     It is categorised into three categories:
+
+	1. Creational design pattern - Factory pattern, Builder pattern, Singleton pattern etc.
+	2. Structural design pattern - Proxy pattern, Adaptor pattern etc.
+	3. Behavioral design pattern - Observer pattern, State pattern, Iterator pattern etc.
+
+
+Q21: What are the OOP's concept in javascript / in all other programming languages?
+
+ANS: OOP's stands for object oriented programming. It has four pillars.
+     
+     1. Abstraction - Abstraction is the process of hiding the detail of an application from the outer world. It is used to describe the things in simple terms. It is 
+                      used to create a boundary between the application and the client program. e.g. of Mixer/Juicer machine for real users.  
+
+     2. Encapsulation - Encapsulation is one of the basic concepts that bundles data and methods into a single block called class. e.g Laptop is bundled with multiple 
+                        parts like Motherboard, RAM, Blutooth, Wifi port, USB pots etc.
+
+     3. Inheritence -  A class that inherits attributes/properties and methods from another class that is called inheritence. e.g. class A extends class B.
+
+     4. Polymorphism - Polymorphism is the ability of objects to take on different forms or behave in different ways depending on the context in which they are used. 
+
+
+Q22: Difference between Transpiler and Compiler?
+
+ANS: Both are used to convert the code from one programming language to another programming language.
+
+     Transpiler: - For example, transpiler convert the ES6 JS code to ES5 JS code because browser does not understand the ES6.
+		 - In React Js, browser does not understand the JSX. So, with the help of javascript transpiler Babel convert the JSX to Javascript and html. 
+		 - Most popular javascript transpiler are: Babel, TypeScript, CoffeeScript etc.
+
+     Compiler: - Compiler also convert the code from one programming language to another programming language. For example java to machine language.  
+
+
+Q23: What is Server Side Rendering(SSR) and Client Side Rendering(CSR)?
+
+ANS: SSR: - SSR is a popular technique for rendering a client-side app on the server and then sending a fully rendered page to the client.
+	  - In SSR our html page rendered from server side with the help of server side programming language like Java, C, C++ etc.
+          - In React's server side source code all the rendered dynamic elements are visible.
+	
+	PROS: - One major benefit of using SSR is in having app to crowled for search engine which helps in SEO.
+              - SSR can also often help with performance because a fully loaded app is sent down from the server on the first request.  
+
+        SSR in React: - Hydrate instead of render
+                      - Use ReactDOMServer renderToString
+                      - Simple Express Server
+                      - Configuring Webpack & Babel 
+
+
+     CSR: - In CSR our html page rednered from client/frontend side with the help of javascript. 
+          - In React's client side source code only the blank <div id="root"></div> element visible.
+
+
+
+
+

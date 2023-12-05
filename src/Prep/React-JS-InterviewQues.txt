@@ -1,0 +1,253 @@
+
+- Install the Recommended version of NodeJS
+
+- check the version of NodeJS node -v on cmd
+
+- What is React?
+
+- Install React JS in our system using " npx create-react-app app_name "
+
+- Go to the main directory by typing cd app_name
+
+- How to run the React Project 🤔 Oooo It's simple
+  just write the npm or yarn start command
+
+- Understand the folder Structure
+
+- Remove the Boiler Plate
+
+- What's New in React 17th Version? We will see it after our first component.
+
+- Vs Code Extension to make our React life Easy
+  - VS Code JavaScript (ES6) snippets
+  - ES7 React/Redux/GraphQL/React-Native snippets
+  - Bracket Pair Colourizer
+  - Thender Client (For test REST API)
+  - Auto Rename Tag
+  - Prettier (Code Formatter)
+  - Live Server
+
+- Hello World In React JS
+
+- Our First Component in React JS
+  Three things are mandatory & that are
+  import React from "react"
+  any one function (functional Component)
+  It should always return JSX.
+
+- After React 17.0 Version, Now no need to write
+  import React from "react" Anymore
+
+- What is JSX? Rules to write JSX.
+  - It always return single element
+  - use Div or React Fragment to wrap all your JSX Code
+  - className in place of class
+  - Need to close all non closing Tags in JSX
+  - Use camelCase for attributes
+
+- Autocomplete for React JSX 😍 Very Important
+  - Open the settings
+  - Open Setting(JSON) file located on Top Right Corner
+  - Add the following Code => "emmet.includeLanguages": {"javascript": "javascriptreact"},
+
+- What is Nested Components?
+
+- CSS in React JS
+
+- Props in React JS
+
+- Props Children????
+
+- JS important Methods
+  - Map Method
+  - Spread Operator & Many More
+
+- Events In React JS
+
+Q1: What are the life cycle methods in React JS?
+
+ANS: There are about 5 life cycle methods in react js.
+     - Constructor [constructor() method is use to define the property and methods. It execute automatically at the time of creating the object.]
+     - Mounting [componentDidMount() method is like a birth/starting phase of a component] 
+     - Render [render() method is use to convert the JSX code to react DOM]
+     - Updating [componentDidUpdate() method is a updating/processing phase of a component]
+     - Unmounting [componentWillUnmount() method is ending/deleting phase of component] 
+
+
+Q2: What are the Props, PropsTypes and DefaultProp?
+
+ANS: - Props are stands for the properties which are use to send the data or information from one component to another component, from parent to child component.
+     - PropsTypes means, we define what type of props we can use in the applcation. Exp, string, number, boolean etc.
+     - DefaultProp means, if we didn't pass any value of a defined props, in that case we can set the default value of props.
+
+
+Q3: What are the States?
+
+ANS: States are belongs to the components, which we use to hold and manage the data/state of application. For eg: useState hook is use to manage the data/state.
+     const [stateVariable, setStateVariable] = useState(initialData); 
+
+
+Q4: What are the Higher Order Components (HOC)?
+
+ANS: - A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern            
+       that emerges from React’s compositional nature. 
+     - A higher-order component is a function that takes a component and returns a new component.
+     - HOCs are common in third-party React libraries, such as Redux and Relay.
+
+
+Q5: What is useRef hook in ract?
+
+ANS: - useRef hook create a mutable variable which will not re-render the components.
+     - useRef hook also use to access the DOM element directly.
+
+
+Q6: What is the useMemo hook in react?
+
+ANS: - useMemo hook is use to improve the performance of the application.
+     - useMemo hook returns the memoized value.
+     - It is the smaller version of useCallback hook.
+
+
+Q7: What is the useCallback hook in react?
+
+ANS: - useCallback hook is use to iprove the performance of the application.
+     - useCallback hook return the memoized function.
+
+
+Q8: What are the state management libraries in react?
+
+ANS: Most commomn and popular state management libraries in React are :
+     - Redux
+     - Rematch
+     - Recoil
+     - Zustand
+     - Jotai 
+     - Relay
+
+
+Q9: What are the advantages(pros) and disadvantages/limitations(cons) of React?
+
+ANS: Advantages(pros) : - Easy to learn and use.
+                        - Creating dynamic web application becomes easier.
+                        - It works on Virual DOM concepts.
+                        - Reusable components.
+                        - Performance enhancemment
+                        - Support of tools (React Developer Tool for Chrome and Firefox)
+                        - Scope for testing the codes
+
+     Disadvantages(Cons) : - The high pace of development
+                           - Slow documentation
+                           - View part
+                           - JSX as a barrier
+                           - Not SEO friendly
+
+
+Q10: What are the difference between Functional and Class based components in React?
+
+ANS: Functional Based Components - A functional component is just a plain javascript function that accepts props as an arguments and returns a react element(JSX).
+                                 - There is no render() menthod used in functional components.
+                                 - React lifecycle method cannot be used in functional components, for ex : componentDidMount()
+                                 - In earlier versions functional components were stateless, but now we can add state in it using useState hook.
+
+
+     Class Based Components - A class component requires you to extend from React component and create a render function which returns a react element.                                            
+                            - It must have the render() method returning HTML.
+                            - React lifecycle method can be used inside class components, for ex : componentDidMount()
+                            - Class based components are known as stateful components because they implement logic and state.
+
+
+Q11: What is unidirectional data flow in React JS?
+
+ANS: Unidirectional data flow describes a one-way data flow where the data can move in only one pathway when being transferred between different parts of the program.
+     React, a Javascript library, uses unidirectional data flow. The data from the parent is known as props. You can only transfer data from parent to child and not 
+     vice versa.
+
+
+Q12: How to optimize react application? Any example?
+
+ANS: - Key Coordination for List Rendering
+     - Lazy loading Images in React
+     - Utilize Prop-Types
+     - Use of Functional Components
+
+
+Q13: How to pass data from child to parent component?
+
+ANS: - Create a callback method. This method will get the data from the Child to Parent.
+     - Pass your data as props in Child. The Child will call the Parent callback using props.
+     - The callback method in the Parent will act as prop to the Child component.
+
+
+Q14: What is Redux and how it works?
+
+ANS: Redux is an open-source JavaScript library for managing and centralizing application state. It is most commonly used with libraries such as React or Angular for 
+     building user interfaces.
+
+
+Q15: Redux Thunk VS Saga?
+
+ANS: The benefit of Redux-Saga in comparison to Redux-Thunk is that you can more easily test your asynchronous data flow. Redux-Thunk, however, is great for small 
+     projects and for developers who just entered into the React ecosystem. 
+
+
+Q16: What is create-react-app ?
+
+ANS: create-react-app command/tool is a combination of two commands 1 is for installing the react and 2 is for creating the react project. It does not require the 
+     additional configuration, it install all the react project dependencies itself like Webpack and Babel libraries.  
+
+
+Q17: What is Render Hijecking in React?
+
+ANS:  
+
+
+
+
+========
+Projects
+========
+1. Restaurent Menu Project (Key Points which learnt from this project)
+   - Map method
+   - UseState hook
+   - Spread operator
+   - Destructuring object
+   - Nested Component
+   - Props
+   - Events
+
+2. INCR and DECR the number (Key Points which learnt from this project)
+   - UseState Hook
+   - Ternary Operator
+   - UseReducer Hook
+   - Events
+
+3. Whatsapp and Facebook Notification Count (Key Points which learnt from this project)
+   - UseState Hook
+   - UseEffect Hook
+   - Ternary Operator
+   - Events
+
+4. Todo List Projects (Key Points which learnt from this project)
+   - Adding the items
+   - Deleting the items
+   - Remove All items
+   - Edit the items
+   - Local Storage
+   - UseState Hook
+   - UseEffect Hook
+   - Ternary Operator
+   - Events
+
+5. Weather Application Project (Key Points which learnt from this project)
+   - UseState Hook
+   - async await method
+   - try catch block
+   - fetch method
+   - UseEffect Hook
+   - Destructuring Object
+   - Nested Component
+   - Props
+   - Events
+   - Switch Case block
+   - Converting seconds into Hours and Minutes 
+   - Creating API keys
